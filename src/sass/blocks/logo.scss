@@ -1,0 +1,13 @@
+.logo {
+  &__link {
+    width: size(274px);
+    height: size(53px);
+    display: block;
+    @include link-reset;
+  }
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}

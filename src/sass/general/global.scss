@@ -25,39 +25,22 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-
   @include font-xs;
   font-family: $notosans;
-  font-weight: 400;
-  color: $black;
-
-  background-color: $white;
+  font-weight: 300;
+  color: $white;
+  background-color: $dark-blue;
 
   @include mobile {
     height: auto;
     overflow-y: auto;
   }
-
-  &.is-main {
-    @include mobile {
-      height: 100%;
-      overflow: hidden;
-    }
-  }
 }
 
-.menu-opened {
-  position: fixed;
-
-  &.full {
-    overflow-y: scroll;
-  }
-}
-
-main {
-  height: 100vh;
-  overflow-y: auto;
-}
+// main {
+//   height: 100vh;
+//   overflow-y: auto;
+// }
 
 .visually-hidden {
   position: absolute;
@@ -74,7 +57,7 @@ main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 size-desktop(121px);
+  padding: 0 size-desktop(100px);
   box-sizing: border-box;
 
   @include mobile {
