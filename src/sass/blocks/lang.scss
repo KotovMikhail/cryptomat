@@ -1,0 +1,68 @@
+.lang {
+  &__list {
+    @include list-reset;
+    position: relative;
+  }
+
+  &__link {
+    color: $white;
+    @include link-reset;
+    @include font-xs;
+    transition: color 0.3s ease-in-out;
+
+    &--triangle {
+      &::before {
+        @include triangle;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 70%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: size(56px);
+        height: size(40px);
+        border: size(1px) solid $white;
+        border-radius: size(10px);
+        background-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &:hover {
+      color: $gold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      border-left-color: $gold;
+      border-bottom-color: $gold;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      border-color: $gold;
+    }
+  }
+
+  // dropdown menu
+
+  &__sub-list {
+    display: none;
+    position: absolute;
+    top: size(30px);
+    right: 0;
+    @include list-reset;
+  }
+
+  &__link:active ~ .lang__sub-list {
+    display: block;
+  }
+
+  &__sub-link {
+    color: $white;
+    @include link-reset;
+    @include font-xs;
+  }
+}

@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  padding-top: size(32px);
+  padding-bottom: size(75px);
+
+  &__logo {
+    margin-right: size(156px);
+  }
+
+  &__nav {
+    margin-right: size(20px);
+  }
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: size(60px);
+}

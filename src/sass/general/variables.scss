@@ -1,31 +1,38 @@
-$width-desktop:   1440px;
-$width-laptop:    1200px;
+$width-desktop: 1440px;
+$width-laptop: 1200px;
 $width-tablet-lg: 1024px;
-$width-tablet:     768px;
-$width-mobile:     375px;
-$width-min:        320px;
+$width-tablet: 768px;
+$width-mobile: 375px;
+$width-min: 320px;
 
 $width-tablet-media: 1000px;
 
-$height-desktop:   800px;
-$height-tablet:    768px;
+$height-desktop: 800px;
+$height-tablet: 768px;
 
-$retina-dpi:      144dpi;
-$retina-dppx:    1.5dppx;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
-$notosans: "NotoSans", "Arial", sans-serif;
-$istok: "NotoSans", "Arial", sans-serif;
-$istok-bold: "NotoSans", "Arial", sans-serif;
+$notosans: 'NotoSans', 'Arial', sans-serif;
+$istok: 'IstokWeb-Regular', 'Arial', sans-serif;
+$istok-bold: 'IstokWeb-Bold', 'Arial', sans-serif;
 
-$font-main: 16px;
+$font-main: 18px;
 
 $transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 
-$black:           #000000;
-$white:           #ffffff;
+$black: #000000;
+$white: rgba(255, 255, 255, 0.8);
 $transparent: transparent;
 
+$blue: #0758b7;
+$vivid-blue: #039cfd;
+$light-blue: #66ccff;
+$dark-blue: #01194f;
+$very-dark-blue: #0e171c;
 
+$gold: #ffea43;
+$orange: #ff9900;
 
-
-
+// $blue-linear: #0099FF 0.34%#66CCFF 100%;
+// $orange-linear: #FF9900  0% #FFE91A  100%;
