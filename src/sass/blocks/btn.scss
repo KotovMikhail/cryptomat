@@ -1,0 +1,24 @@
+.btn {
+  position: relative;
+  @include link-reset;
+  @include button-reset;
+  @include font-xs-istok;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: size(16px) size(78px);
+  padding-bottom: size(12px);
+  border-radius: size(10px);
+  max-width: size(235px);
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: $dark-blue;
+  background: $orange-gradient;
+
+  &--orange {
+
+  }
+
+  &--border-only {
+    color: $white;
+  }
+}

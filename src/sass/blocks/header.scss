@@ -1,14 +1,21 @@
 .header {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: size(35px);
+  padding-right: size-desktop(100px);
+  padding-bottom: size(58px);
+  padding-left: size-desktop(100px);
+
+  box-sizing: border-box;
   width: 100%;
-  padding-top: size(32px);
-  padding-bottom: size(75px);
 
   &__logo {
     margin-right: size(156px);
   }
 
   &__nav {
-    margin-right: size(20px);
+    margin-right: size(25px);
   }
 }
 

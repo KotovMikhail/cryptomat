@@ -427,7 +427,7 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 6.94444vw;
+  padding: 0 11.45833vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -441,7 +441,7 @@ body {
 /* Blocks */
 .nav {
   width: 100%;
-  max-width: 41.66667rem;
+  max-width: 38.88889rem;
 }
 
 .nav__list {
@@ -611,10 +611,124 @@ body {
   font-weight: 300;
 }
 
-.header {
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 19.44444rem;
+}
+
+.social__list li {
+  margin-right: 0.5rem;
+}
+
+.social__list li:last-child {
+  margin-right: 0;
+}
+
+.social__list a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3.05556rem;
+  height: 2.11111rem;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: cubic-bezier(0.77, 0, 0.175, 1);
+  transition: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.social__list a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
   width: 100%;
-  padding-top: 1.77778rem;
-  padding-bottom: 4.16667rem;
+  height: 100%;
+  background-image: url("../../img/circle-grey.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.social__list a::before, .social__list a::after {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.social__list a:hover, .social__list a:focus {
+  outline: none;
+}
+
+.social__list a:hover::before, .social__list a:hover::after, .social__list a:focus::before, .social__list a:focus::after {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.social__list svg {
+  width: 0.88889rem;
+  height: 0.88889rem;
+}
+
+.btn {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: "IstokWeb-Regular", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.38889rem;
+  font-weight: 300;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.88889rem 4.33333rem;
+  padding-bottom: 0.66667rem;
+  border-radius: 0.55556rem;
+  max-width: 13.05556rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #01194f;
+  background: linear-gradient(225deg, #ff9900 0%, #ffe91a 100%);
+}
+
+.btn--border-only {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.94444rem;
+  padding-right: 6.94444vw;
+  padding-bottom: 3.22222rem;
+  padding-left: 6.94444vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
 .header__logo {
@@ -622,7 +736,7 @@ body {
 }
 
 .header__nav {
-  margin-right: 1.11111rem;
+  margin-right: 1.38889rem;
 }
 
 .header__wrap {
@@ -636,4 +750,40 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 3.33333rem;
+}
+
+.present__sub-title {
+  margin: 0;
+  margin-bottom: 0.83333rem;
+  letter-spacing: -0.03333rem;
+  font-size: 2.22222rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
+.present__title {
+  margin: 0;
+  margin-bottom: 0.38889rem;
+  width: 100%;
+  max-width: 53.22222rem;
+  text-transform: uppercase;
+  font-family: "IstokWeb-Bold", "Arial", sans-serif;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: bold;
+}
+
+.present__descr {
+  margin: 0;
+  margin-bottom: 1.61111rem;
+  width: 100%;
+  max-width: 36.11111rem;
+  letter-spacing: -0.02222rem;
+  font-size: 1rem;
+  line-height: 1.38889rem;
+  font-weight: 300;
+}
+
+.present__btn {
+  margin-bottom: 3.05556rem;
 }

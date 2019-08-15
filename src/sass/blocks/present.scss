@@ -1,0 +1,32 @@
+.present {
+  &__sub-title {
+    margin: 0;
+    margin-bottom: size(15px);
+    letter-spacing: size(-0.6px);
+    @include font-large;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: size(7px);
+    width: 100%;
+    max-width: size(958px);
+    text-transform: uppercase;
+    @include font-xxl-bold-istok;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: size(29px);
+    width: 100%;
+    max-width: size(650px);
+    letter-spacing: size(-0.4px);
+    @include font-xs;
+  }
+
+  &__btn {
+    margin-bottom: size(55px);
+  }
+
+
+}
