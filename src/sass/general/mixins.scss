@@ -47,9 +47,16 @@
 }
 
 @mixin font-xxl-bold {
-  font-size: (90px);
+  font-size: size(90px);
   line-height: size(90px);
-  font-style: bold;
+  font-weight: bold;
+}
+
+@mixin font-xxl-bold-istok {
+  font-family: $istok-bold;
+  font-size: size(90px);
+  line-height: size(90px);
+  font-weight: bold;
 }
 
 @mixin font-xl-bold {
@@ -72,6 +79,13 @@
 
 
 @mixin font-xs {
+  font-size: size(18px);
+  line-height: size(25px);
+  font-weight: 300;
+}
+
+@mixin font-xs-istok {
+  font-family: $istok;
   font-size: size(18px);
   line-height: size(25px);
   font-weight: 300;
@@ -133,4 +147,24 @@
   border-right: none;
   transform: rotate(-45deg);
   transition: all 0.3s ease-in-out;
+}
+
+@mixin hover {
+  transition: $transition;
+
+  &::before,
+  &::after {
+    transition: transform 0.2s $transition;
+    transform-origin: center;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    &::before,
+    &::after {
+      transform: scale(1.2);
+    }
+  }
 }
