@@ -5,6 +5,8 @@ $width-tablet: 768px;
 $width-mobile: 375px;
 $width-min: 320px;
 
+$container-height: 800px;
+
 $width-tablet-media: 1000px;
 
 $height-desktop: 800px;
@@ -22,7 +24,8 @@ $font-main: 18px;
 $transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 
 $black: #000000;
-$white: rgba(255, 255, 255, 0.8);
+$white: #ffffff;
+$white-light: rgba(255, 255, 255, 0.8);
 $transparent: transparent;
 $transition: cubic-bezier(0.77, 0, 0.175, 1);
 
@@ -39,3 +42,12 @@ $orange: #ff9900;
 
 $orange-gradient: linear-gradient(225deg, #ff9900 0%, #ffe91a 100%);
 $blue-gradient: linear-gradient(225deg, #0099FF 0.34%, #66CCFF 100%);
+
+$about-gradient: linear-gradient(270.35deg, #012965 0.09%, #01194F 99.82%);
+
+$first-link: linear-gradient(225deg, #ff9900 0%, #ffe91a 100%);
+$second-link: linear-gradient(225deg, #2F80ED 0%, #6FCF97 100%);
+$third-link: linear-gradient(225deg, #9B51E0 0%, #EB5757 100%);
+$fourth-link: linear-gradient(225deg, #219653 0%, #F2C94C 100%);
+$fifth-link: linear-gradient(270deg, #ff9900 0%, #eb5757 100%);
+

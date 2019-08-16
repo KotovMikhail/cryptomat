@@ -1,0 +1,27 @@
+.ieo {
+  padding-bottom: size(74px);
+
+  &__title {
+    margin-bottom: size(35px);
+  }
+
+  &__content-wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &__img-wrap {
+    width: 100%;
+    max-width: size(435px);
+    margin-right: size(45px);
+
+    img {
+      display: block;
+      width: size(435px);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

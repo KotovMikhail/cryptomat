@@ -1,9 +1,12 @@
 .present {
+  padding-bottom: size(118px);
+
   &__sub-title {
     margin: 0;
     margin-bottom: size(15px);
     letter-spacing: size(-0.6px);
     @include font-large;
+    color: $white;
   }
 
   &__title {
@@ -13,6 +16,7 @@
     max-width: size(958px);
     text-transform: uppercase;
     @include font-xxl-bold-istok;
+    color: $white;
   }
 
   &__descr {
@@ -22,6 +26,7 @@
     max-width: size(650px);
     letter-spacing: size(-0.4px);
     @include font-xs;
+    color: $white-light;
   }
 
   &__btn {

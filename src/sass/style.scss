@@ -14,14 +14,27 @@
 @import "blocks/lang";
 @import "blocks/social";
 @import "blocks/btn";
+@import "blocks/title-box";
 // Главные блоки
 
 // header
 @import "blocks/header";
 
-// main
-@import "blocks/present";
 
+// present
+@import "blocks/present";
+// ieo
+@import "blocks/ieo";
+@import "blocks/advance";
+
+// about
+@import "blocks/about";
+
+// paper
+@import "blocks/paper";
+
+// roadmap
+@import "blocks/roadmap";
 
 // footer
 @import "blocks/footer";

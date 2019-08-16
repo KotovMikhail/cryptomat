@@ -1,8 +1,8 @@
 {
-  "name": "Cryptomat",
+  "name": "rukami",
   "version": "1.0.0",
   "private": true,
-  "description": "Криптомат",
+  "description": "Руками",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
@@ -44,5 +44,8 @@
   ],
   "engines": {
     "node": "8.12"
+  },
+  "dependencies": {
+    "web-animations-js": "^2.3.2"
   }
 }

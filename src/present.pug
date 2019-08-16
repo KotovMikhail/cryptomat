@@ -2,25 +2,26 @@ include pug/mixins/svg
 
 section.present
   .container
-    p.present__sub-title Подзаголовок
+    .positioner
+      p.present__sub-title Подзаголовок
+      h2.present__title Заголовок ABCD несколько слов
+      p.present__descr Какой-то текст с описанием. Но явные признаки победы институционализации, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+      a.btn.present__btn(href="#" target="_blank" aria-label="Кнопка перехода") Кнопка
 
-    h1.present__title Заголовок ABCD несколько слов
+      .social
+        ul.social__list
+          li
+            a(href="#" target="_blank")
+              span.visually-hidden Мы в Facebook
+              +svg('tw', 21, 18)
+          li
+            a(href="#" target="_blank")
+              span.visually-hidden Мы в Facebook
+              +svg('fb', 11, 24)
+          li
+            a(href="#" target="_blank")
+              span.visually-hidden Мы во Vkontakte
+              +svg('vk', 24, 14)
 
-    p.present__descr Какой-то текст с описанием. Но явные признаки победы институционализации, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
 
-    a.btn.present__btn(href="#" target="_blank" aria-label="Кнопка перехода") Кнопка
 
-    .social
-      ul.social__list
-        li
-          a(href="#" target="_blank")
-            span.visually-hidden Мы в Facebook
-            +svg('tw', 21, 18)
-        li
-          a(href="#" target="_blank")
-            span.visually-hidden Мы в Facebook
-            +svg('fb', 11, 24)
-        li
-          a(href="#" target="_blank")
-            span.visually-hidden Мы во Vkontakte
-            +svg('vk', 24, 14)
