@@ -1,17 +1,11 @@
 .header {
-  margin-left: auto;
-  margin-right: auto;
-
   padding-top: size(35px);
-  padding-right: size-desktop(100px);
   padding-bottom: size(58px);
-  padding-left: size-desktop(100px);
-
   box-sizing: border-box;
   width: 100%;
 
   &__logo {
-    margin-right: size(156px);
+    margin-right: size(160px);
   }
 
   &__nav {
@@ -23,5 +17,4 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-right: size(60px);
 }

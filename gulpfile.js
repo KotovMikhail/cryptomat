@@ -130,7 +130,9 @@ gulp.task('scripts:vendor', function() {
 gulp.task('scripts', function() {
   return gulp.src([
       'src/js/global/*.js',
-      'src/js/modules/*.js'
+      'src/js/spa/*.js',
+      'src/js/modules/*.js',
+
     ])
   .pipe(plumber())
   .pipe(concat('script.js'))

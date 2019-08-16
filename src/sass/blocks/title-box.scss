@@ -1,0 +1,48 @@
+.title-box {
+  position: absolute;
+  top: size(-26px);
+  left: size(-65px);
+  bottom: 0;
+  width: size(12px);
+
+  span {
+    display: block;
+    margin-top: size(50px);
+    @include font-xs-ist;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    text-align: center;
+    letter-spacing: 0.6em;
+    color: rgba(0, 153, 255, 0.34);
+    transform-origin: 100% 100%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: size(-199px);
+    bottom: 0;
+    right: size(7px);
+    display: block;
+    clear: both;
+    width: size(1px);
+    height: size(120px);
+    background: $blue-gradient;
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: size(80px);
+    bottom: 0;
+    right: size(8px);
+    display: block;
+    clear: both;
+    width: size(1px);
+    height: size(555px);
+    background: $blue-gradient;
+    opacity: 0.3;
+  }
+}

@@ -65,6 +65,13 @@
   font-weight: bold;
 }
 
+@mixin font-xl-bold-istok {
+  font-family: $istok-bold;
+  font-size: size(70px);
+  line-height: size(90px);
+  font-weight: bold;
+}
+
 @mixin font-large {
   font-size: size(40px);
   line-height: size(54px);
@@ -91,10 +98,12 @@
   font-weight: 300;
 }
 
+
 @mixin font-xs-ist {
-  font-size: size(18px);
-  line-height: size(26px);
-  font-weight: normal;
+  font-family: $istok;
+  font-size: size(14px);
+  line-height: size(14px);
+  font-weight: 300;
 }
 
 

@@ -1,0 +1,39 @@
+.about {
+  position: relative;
+  padding-top: size(80px);
+  padding-bottom: size(70px);
+  background: $about-gradient;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: size(42px);
+    top: size(-80px);
+    background-color: transparent;
+    width: size(28px);
+    height: size-vh(577px, $container-height);
+    background-image: url('../../img/about__bg-left.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: size(28px);
+    z-index: 50;
+  }
+
+  & .container {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: size(15px);
+  }
+
+  &__descr {
+    margin: 0;
+    width: 100%;
+    max-width: size(1144px);
+    letter-spacing: size(-0.7px);
+    @include font-large;
+    color: $white-light;
+  }
+}
