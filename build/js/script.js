@@ -5352,3 +5352,15 @@ else if (typeof define === 'function' && define.amd) {
 }
 
 //# sourceMappingURL=maps/swiper.js.map
+
+$('.team__list').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true,
+  centerMode: false,
+  focusOnSelect: true,
+  arrows: true,
+  centerPadding: '60px'
+
+});

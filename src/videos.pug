@@ -1,0 +1,32 @@
+include pug/mixins/svg
+
+section.videos
+  .container
+    .positioner
+      h2.title.videos__title Videos
+
+      .content.videos__content
+        ul.content__list.videos__content-list
+          li.content__item.content__item--big
+            .content__block
+              img.content__img.content__img.content__img--big(src="img/play-icon.svg" width="50" height="50" alt="Play button")
+              .content__title-wrap
+                h3.content__title Заголовок видео
+                .content__date.content__date--big 12.07.2019
+
+          li.content__item.content__item--small
+            .content__block.content__block--small
+              img.content__img.content__img--small(src="img/play-icon.svg" width="50" height="50" alt="Play button")
+              .content__title-wrap
+                h3.content__title.content__title--small Заголовок видео
+                .content__date.content__date--small 12.07.2019
+
+          li.content__item.content__item--small
+            .content__block.content__block--small
+              img.content__img.content__img--small(src="img/play-icon.svg" width="50" height="50" alt="Play button")
+              .content__title-wrap
+                h3.content__title.content__title--small Заголовок видео
+                .content__date.content__date--small 12.07.2019
+      .videos__btn-wrap
+        a.btn.btn--border-only.videos__btn(href="#" target="_blank")
+          span see more

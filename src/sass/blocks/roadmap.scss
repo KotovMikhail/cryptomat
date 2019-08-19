@@ -1,13 +1,111 @@
 .roadmap {
+  position: relative;
+  padding-bottom: size(85px);
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: size(45px);
+    display: block;
+    clear: both;
+    width: size(1px);
+    height: size(1725px);
+    background: $blue-gradient;
+    opacity: 0.3;
+  }
 
+  &__list p {
+    &::before {
+      content: none;
+    }
+  }
+  &__title {
+    margin-bottom: size(38px);
+  }
 
+  &__descr {
+    margin: 0;
+    width: 100%;
+    max-width: size(550px);
+    letter-spacing: size(-0.7px);
+    @include font-large;
+  }
 
+  &__wrapper {
+    display: flex;
+  }
 
+  &__left {
+    width: 54%;
+  }
 
+  &__right {
+    width: 45.6%;
+  }
 
+  &__circle {
+    position: relative;
+    display: inline-block;
+    width: size(27px);
+    height: size(27px);
+    border-radius: 50%;
+    background: $orange-gradient;
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: size(16px);
+      height: size(11px);
+      transform: translate(-50%, -50%);
+      background-image: url('../../img/check-mark.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100%;
+    }
 
+    &--small {
+      width: size(17px);
+      height: size(17px);
 
+      &::before {
+        content: none;
+      }
+    }
+  }
 
+  &__status {
+    margin-top: size(14px);
+    text-transform: uppercase;
+    @include font-xxs;
+    color: $white-very-light;
+
+    &--active {
+      color: $orange;
+    }
+  }
+
+  &__title-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: size(27px);
+      left: size(21px);
+      width: size(1px);
+      height: size(150px);
+      background: $orange-gradient;
+    }
+  }
 }

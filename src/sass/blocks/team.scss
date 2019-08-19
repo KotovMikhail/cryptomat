@@ -1,0 +1,55 @@
+.team {
+  padding-top: size(80px);
+  padding-bottom: size(70px);
+  background: $about-gradient;
+
+  .positioner {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  &__title {
+    padding-left: size(108px);
+    margin-bottom: size(54px);
+    box-sizing: border-box;
+  }
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__img {
+    margin-bottom: size(40px);
+    width: size(220px);
+    height: size(220px);
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: size(12px);
+    @include font-medium;
+  }
+
+  &__position {
+    margin: 0;
+    margin-bottom: size(30px);
+    color: $orange;
+    @include font-xs;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+
+
+  &__social-list {
+    @include list-reset;
+  }
+}

@@ -1,14 +1,14 @@
-.about {
+.press {
   position: relative;
   padding-top: size(80px);
-  padding-bottom: size(70px);
-  background: $about-gradient;
+  padding-bottom: size(40px);
+  background: $press-gradient;
 
   &::before {
     content: '';
     position: absolute;
     left: size(42px);
-    top: 0  ;
+    top: size(12px);
     background-color: transparent;
     width: size(28px);
     height: size-vh(577px, $container-height);
@@ -19,21 +19,7 @@
     z-index: 50;
   }
 
-  & .container {
-    position: relative;
-  }
-
   &__title {
-    margin: 0;
-    margin-bottom: size(15px);
-  }
-
-  &__descr {
-    margin: 0;
-    width: 100%;
-    max-width: size(1144px);
-    letter-spacing: size(-0.7px);
-    @include font-large;
-    color: $white-light;
+    margin-bottom: size(33px);
   }
 }
