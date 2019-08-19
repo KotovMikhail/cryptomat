@@ -26,6 +26,7 @@ $transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 $black: #000000;
 $white: #ffffff;
 $white-light: rgba(255, 255, 255, 0.8);
+$white-very-light: rgba(255, 255, 255, 0.3);
 $transparent: transparent;
 $transition: cubic-bezier(0.77, 0, 0.175, 1);
 
@@ -41,9 +42,11 @@ $orange: #ff9900;
 // $blue-linear: #0099FF 0.34%#66CCFF 100%;
 
 $orange-gradient: linear-gradient(225deg, #ff9900 0%, #ffe91a 100%);
+$orange-gradient-2: linear-gradient(270deg, #ff9900 0%, #ffe91a 100%);
 $blue-gradient: linear-gradient(225deg, #0099FF 0.34%, #66CCFF 100%);
 
 $about-gradient: linear-gradient(270.35deg, #012965 0.09%, #01194F 99.82%);
+$press-gradient: linear-gradient(-89.02deg, #01194F 0.38%, #012965 99.63%);
 
 $first-link: linear-gradient(225deg, #ff9900 0%, #ffe91a 100%);
 $second-link: linear-gradient(225deg, #2F80ED 0%, #6FCF97 100%);

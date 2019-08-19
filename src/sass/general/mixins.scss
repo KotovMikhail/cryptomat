@@ -78,6 +78,12 @@
   font-weight: 300;
 }
 
+@mixin font-large-bold {
+  font-size: size(40px);
+  line-height: size(28px);
+  font-weight: 500;
+}
+
 @mixin font-medium {
   font-size: size(28px);
   line-height: size(28px);
@@ -103,6 +109,12 @@
   font-family: $istok;
   font-size: size(14px);
   line-height: size(14px);
+  font-weight: 300;
+}
+
+@mixin font-xxs {
+  font-size: size(14px);
+  line-height: size(18px);
   font-weight: 300;
 }
 

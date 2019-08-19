@@ -1,5 +1,6 @@
 /* Vendor */
 @import "vendor/normalize";
+
 /* General */
 @import "general/variables";
 @import "general/functions";
@@ -15,26 +16,32 @@
 @import "blocks/social";
 @import "blocks/btn";
 @import "blocks/title-box";
+@import "blocks/slider";
+@import "blocks/content";
+@import "blocks/advance";
+
 // Главные блоки
 
 // header
 @import "blocks/header";
-
-
 // present
 @import "blocks/present";
 // ieo
 @import "blocks/ieo";
-@import "blocks/advance";
-
 // about
 @import "blocks/about";
-
 // paper
 @import "blocks/paper";
-
 // roadmap
 @import "blocks/roadmap";
-
+// press
+@import "blocks/press";
+// videos
+@import "blocks/videos";
+// team
+@import "blocks/team";
 // footer
 @import "blocks/footer";
+
+@import "vendor/slick";
+@import "vendor/slick-theme";
