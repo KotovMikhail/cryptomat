@@ -1,0 +1,36 @@
+include pug/mixins/svg
+
+section.faq#faq
+  .container
+    .positioner
+      h2.title.faq__title Faq
+      .faq__acc
+        .faq__col
+          .faq__block(data-faq="1")
+            h3.faq__question(data-faq="1") Какой-то частый вопрос?
+              span
+                +svg("plus", 19, 19)
+                +svg("minus", 19, 19)
+            p.faq__answer А это ответ на какой-то частый вопрос
+          .faq__block(data-faq="2")
+            h3.faq__question(data-faq="2") Какой-то частый вопрос подлиннее на несколько слов?
+              span
+                +svg("plus", 19, 19)
+                +svg("minus", 19, 19)
+            p.faq__answer The ever 1st user friendly cryptocurrency decentralized exchange. Including blockchain traded fund, secured decentralized blockchain financial p2p messenger, ICO platform and portfolio of inhouse high-end projects for investment
+          .faq__block.faq__block--opened(data-faq="3")
+            h3.faq__question(data-faq="3") Какой-то частый вопрос?
+              span
+                +svg("plus", 19, 19)
+                +svg("minus", 19, 19)
+            p.faq__answer А это ответ на какой-то частый вопрос
+          .faq__block(data-faq="4")
+            h3.faq__question(data-faq="4") Какой-то частый вопрос?
+              span
+                +svg("plus", 19, 19)
+                +svg("minus", 19, 19)
+            p.faq__answer А это ответ на какой-то частый вопрос
+
+        .faq__col
+          .faq__img-wrap
+            img(src="img/faq-bg.svg" alt="FAQ" width="434" height="500")

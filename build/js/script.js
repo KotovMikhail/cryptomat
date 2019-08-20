@@ -5353,6 +5353,33 @@ else if (typeof define === 'function' && define.amd) {
 
 //# sourceMappingURL=maps/swiper.js.map
 
+(function () {
+  document.addEventListener(`click`, (evt) => {
+    let btn;
+
+    if (evt.target.classList.contains(`faq__question`)) {
+      btn = evt.target;
+    } else if (evt.target.parentElement.classList.contains(`faq__question`)) {
+      btn = evt.target.parentElement;
+    }
+
+    if (btn) {
+      let block = btn.parentElement;
+      let openedBlocks = document.querySelectorAll(`.faq__block`);
+
+      if (block.classList.contains(`faq__block--opened`)) {
+
+        setTimeout(() => {
+          block.classList.remove(`faq__block--opened`);
+        }, 100);
+      } else {
+        block.classList.add(`faq__block--opened`);
+
+      }
+    }
+  }, true);
+})();
+
 $('.team__list').slick({
   infinite: true,
   slidesToShow: 3,
@@ -5360,7 +5387,32 @@ $('.team__list').slick({
   dots: true,
   centerMode: false,
   focusOnSelect: true,
-  arrows: true,
-  centerPadding: '60px'
+  arrows: true
+});
 
+
+$(document).ready(function () {
+  $("#menu").on("click", "a", function (event) {
+
+    event.preventDefault();
+    let id = $(this).attr('href'),
+      pTop = ($(id).css("padding-top")),
+      top = ($(id).offset().top) - parseInt(pTop);
+    $('body, html').animate({
+      scrollTop: top
+    }, 1500);
+
+  });
+});
+
+
+
+document.addEventListener('scroll', function () {
+  const header = document.querySelector('.header');
+  if (pageYOffset > 0) {
+    header.style.transition = 'all ease 0.5s'
+    header.style.boxShadow = '0 0 0.3rem #ffffff';
+  } else {
+    header.style.boxShadow = 'none';
+  }
 });

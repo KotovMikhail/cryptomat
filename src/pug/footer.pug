@@ -1,3 +1,45 @@
-footer.footer
+footer.footer#download
   .container
-  
+    .footer__wrap
+
+      .logo.footer__logo
+        a.logo__link.footer__logo-link(href="#" target="_blank" title="Cryptomat")
+          +svg-menu
+        a.footer__confident(href="#" target="_blnak") Политика конфиденциальности
+
+      ul.footer__list
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") IEO
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") Roadmap
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") Team
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") About
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") Press
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") FAQ
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") Papers
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") Videos
+        li.footer__item
+          a.footer__link(href="#" target="_blnak") Blog
+
+      .social.footer__social
+        a.footer__download(href="#" target="_blnak" download) Download
+
+        ul.social__list
+          li
+            a(href="#" target="_blank")
+              span.visually-hidden Мы в Twitter
+              +svg('tw', 21, 18)
+          li
+            a(href="#" target="_blank")
+              span.visually-hidden Мы в Facebook
+              +svg('fb', 11, 24)
+          li
+            a(href="#" target="_blank")
+              span.visually-hidden Мы во Vkontakte
+              +svg('vk', 24, 14)
