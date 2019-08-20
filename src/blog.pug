@@ -1,0 +1,29 @@
+include pug/mixins/svg
+
+section.blog#blog
+  .container
+    .positioner
+      h2.title.blog__title Blog
+
+      .content.blog__content
+        ul.content__list.blog__content-list
+          li.content__item.content__item--big
+            .content__block
+              .content__title-wrap
+                h3.content__title Заголовок новости
+                .content__date.content__date--big 12.07.2019
+
+          li.content__item.content__item--small
+            .content__block.content__block--small
+              .content__title-wrap
+                h3.content__title.content__title--small Заголовок новости
+                .content__date.content__date--small 12.07.2019
+
+          li.content__item.content__item--small
+            .content__block.content__block--small
+              .content__title-wrap
+                h3.content__title.content__title--small Заголовок новости
+                .content__date.content__date--small 12.07.2019
+      .blog__btn-wrap
+        a.btn.btn--border-only.blog__btn(href="#" target="_blank")
+          span Все новости

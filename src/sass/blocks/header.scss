@@ -1,8 +1,13 @@
 .header {
-  padding-top: size(35px);
-  padding-bottom: size(58px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 35px;
+  padding-bottom: 58px;
   box-sizing: border-box;
   width: 100%;
+  background-color: $dark-blue;
+  z-index: 15;
 
   &__logo {
     margin-right: size(160px);
