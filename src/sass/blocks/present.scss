@@ -33,5 +33,24 @@
     margin-bottom: size(55px);
   }
 
+  &__wrap {
+    display:flex;
+  }
+
+  &__content-wrap {
+    width: 100%;
+    max-width: size(958px);
+  }
+
+
+  &__img-wrap {
+    position: relative;
+    & img {
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
 
 }

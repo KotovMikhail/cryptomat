@@ -3,11 +3,14 @@ include pug/mixins/svg
 section.present
   .container
     .positioner
-      p.present__sub-title Подзаголовок
-      h2.present__title Заголовок ABCD несколько слов
-      p.present__descr Какой-то текст с описанием. Но явные признаки победы институционализации, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
-      a.btn.present__btn(href="#" target="_blank" aria-label="Кнопка перехода") Кнопка
-
+      .present-wrap
+        .present__content-wrap
+          p.present__sub-title Подзаголовок
+          h2.present__title Заголовок ABCD несколько слов
+          p.present__descr Какой-то текст с описанием. Но явные признаки победы институционализации, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+          a.btn.present__btn(href="#" target="_blank" aria-label="Кнопка перехода") Кнопка
+        .present__img-wrap
+            img(src="img/present-bg.svg" alt="Present Image" width="859" height="811")
       .social
         ul.social__list
           li

@@ -1207,6 +1207,28 @@ body {
   margin-bottom: 3.05556rem;
 }
 
+.present__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.present__content-wrap {
+  width: 100%;
+  max-width: 53.22222rem;
+}
+
+.present__img-wrap {
+  position: relative;
+}
+
+.present__img-wrap img {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .ieo {
   padding-top: 4.44444rem;
   padding-bottom: 4.11111rem;
