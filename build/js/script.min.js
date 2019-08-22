@@ -5353,6 +5353,44 @@ else if (typeof define === 'function' && define.amd) {
 
 //# sourceMappingURL=maps/swiper.js.map
 
+(() => {
+
+const btnBurger = document.querySelector('.header__burger');
+const btnClose = document.querySelector('.header__close');
+const headerFixed = document.querySelector('.header__fixed');
+
+const menuOpen = () => {
+    btnClose.addEventListener(`click`, menuClose);
+    document.addEventListener(`keydown`, onEscPress);
+    btnBurger.removeEventListener(`click`, menuOpen);
+    headerFixed.classList.add('header__fixed--open');
+
+    // overlay.classList.add(Class.OVERLAY_SHOW);
+    // overlay.addEventListener(`click`, menuClose;
+}
+
+const menuClose = () => {
+  headerFixed.classList.remove('header__fixed--open');
+  btnBurger.addEventListener(`click`, menuOpen);
+
+
+}
+
+const onEscPress =(evt) => {
+  // if (
+  //   this.menu.classList.contains(Class.MENU_OPEN) &&
+  //   e.keyCode === ESC_KEYCODE
+  // ) {
+  //   this.menuClose();
+  // }
+}
+
+
+btnBurger.addEventListener('click', menuOpen);
+btnClose.addEventListener('click', menuClose);
+
+})();
+
 (function () {
   document.addEventListener(`click`, (evt) => {
     let btn;
@@ -5365,16 +5403,12 @@ else if (typeof define === 'function' && define.amd) {
 
     if (btn) {
       let block = btn.parentElement;
-      let openedBlocks = document.querySelectorAll(`.faq__block`);
-
       if (block.classList.contains(`faq__block--opened`)) {
-
         setTimeout(() => {
           block.classList.remove(`faq__block--opened`);
         }, 100);
       } else {
         block.classList.add(`faq__block--opened`);
-
       }
     }
   }, true);
@@ -5390,29 +5424,32 @@ $('.team__list').slick({
   arrows: true
 });
 
+const header = document.querySelector('.header__fixed');
 
 $(document).ready(function () {
   $("#menu").on("click", "a", function (event) {
-
+    let height = header.getBoundingClientRect().height
     event.preventDefault();
     let id = $(this).attr('href'),
       pTop = ($(id).css("padding-top")),
-      top = ($(id).offset().top) - parseInt(pTop);
+      top = ($(id).offset().top) - (parseInt(height));
+      console.log($(id).offset().top, parseInt(pTop))
     $('body, html').animate({
       scrollTop: top
     }, 1500);
-
   });
 });
 
 
-
 document.addEventListener('scroll', function () {
-  const header = document.querySelector('.header');
-  if (pageYOffset > 0) {
-    header.style.transition = 'all ease 0.5s'
+  if (pageYOffset > 1) {
+    header.style.transition = 'all ease 0.3s'
     header.style.boxShadow = '0 0 0.3rem #ffffff';
+    header.style.backgroundColor = '#01194f';
+    header.style.zIndex = '5';
   } else {
     header.style.boxShadow = 'none';
+    header.style.backgroundColor = 'transparent';
+    header.style.zIndex = '1';
   }
 });

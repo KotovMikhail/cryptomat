@@ -2,11 +2,18 @@
   width: 100%;
   max-width: size(700px);
 
+
   &__list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     width: 100%;
     @include list-reset;
+
+    @include tablet-small {
+      flex-direction: column;
+      height: 100vh;
+    }
   }
 
   &__item {
@@ -14,6 +21,11 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @include tablet-small {
+      margin-right: 0;
+      border-bottom: 1px solid $white;
     }
   }
 
@@ -44,6 +56,18 @@
 
     &:hover::after {
       width: 100%;
+    }
+
+    @include tablet-small {
+      padding-top: 20px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+
+      &:hover::after  {
+        color: $gold;
+        content: none;
+      }
     }
   }
 }

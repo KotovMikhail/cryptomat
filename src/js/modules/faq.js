@@ -10,16 +10,12 @@
 
     if (btn) {
       let block = btn.parentElement;
-      let openedBlocks = document.querySelectorAll(`.faq__block`);
-
       if (block.classList.contains(`faq__block--opened`)) {
-
         setTimeout(() => {
           block.classList.remove(`faq__block--opened`);
         }, 100);
       } else {
         block.classList.add(`faq__block--opened`);
-
       }
     }
   }, true);
