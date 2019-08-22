@@ -4,6 +4,11 @@
     height: size(53px);
     display: block;
     @include link-reset;
+
+    @include mobile {
+      width: auto;
+      max-width: 205px;
+    }
   }
 
   & svg {
