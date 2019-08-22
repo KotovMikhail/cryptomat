@@ -4,31 +4,61 @@ header.header
       .logo.header__logo
         a.logo__link(href="#" target="_blank" title="Cryptomat")
           +svg-menu
-      nav.nav.header__nav
-        ul.nav__list#menu
-          li.nav__item: a.nav__link(href="#ieo" aria-label="Перейти на страницу IEO") IEO
-          li.nav__item: a.nav__link(href="#about" aria-label="Перейти на страницу About") About
-          li.nav__item: a.nav__link(href="#papers" aria-label="Перейти на страницу Papers") Papers
-          li.nav__item: a.nav__link(href="#roadmap" aria-label="Перейти на страницу Roadmap") Roadmap
-          li.nav__item: a.nav__link(href="#press" aria-label="Перейти на страницу Press ") Press
-          li.nav__item: a.nav__link(href="#videos" aria-label="Перейти на страницу Videos") Videos
-          li.nav__item: a.nav__link(href="#team" aria-label="Перейти на страницу Team") Team
-          li.nav__item: a.nav__link(href="#faq" aria-label="Перейти на страницу FAQ") FAQ
-          li.nav__item: a.nav__link(href="#blog" aria-label="Перейти на страницу Blog") Blog
-          li.nav__item: a.nav__link(href="#download" aria-label="Перейти на страницу Download") Download
+      .header__fixed
+        nav.nav.header__nav
+          ul.nav__list#menu
+            li.nav__item: a.nav__link(href="#ieo" aria-label="Перейти на страницу IEO") IEO
+            li.nav__item: a.nav__link(href="#about" aria-label="Перейти на страницу About") About
+            li.nav__item: a.nav__link(href="#papers" aria-label="Перейти на страницу Papers") Papers
+            li.nav__item: a.nav__link(href="#roadmap" aria-label="Перейти на страницу Roadmap") Roadmap
+            li.nav__item: a.nav__link(href="#press" aria-label="Перейти на страницу Press ") Press
+            li.nav__item: a.nav__link(href="#videos" aria-label="Перейти на страницу Videos") Videos
+            li.nav__item: a.nav__link(href="#team" aria-label="Перейти на страницу Team") Team
+            li.nav__item: a.nav__link(href="#faq" aria-label="Перейти на страницу FAQ") FAQ
+            li.nav__item: a.nav__link(href="#blog" aria-label="Перейти на страницу Blog") Blog
+            li.nav__item: a.nav__link(href="#download" aria-label="Перейти на страницу Download") Download
+          button.header__close(type='button' aria-label='Закрыть меню')
+            +svg('icon-close', 9, 9)
+        .lang.header__lang
+          ul.lang__list
+            li.lang__item
+              a.lang__link.lang__link--triangle(href="#")
+                span.lang__name EN
+              ul.lang__sub-list
+                li.lang__sub-item
+                  a.lang__sub-link(href="#")
+                  span.lang__sub-name RU
+                li.lang__sub-item
+                  a.lang__sub-link(href="#")
+                  span.lang__sub-name UK
+                li.lang__sub-item
+                  a.lang__sub-link(href="#")
+                  span.lang__sub-name US
+      button.header__burger(type='button' aria-label='Открыть меню')
+        +svg('icon-burger', 30, 22)
 
-      .lang.header__lang
-        ul.lang__list
-          li.lang__item
-            a.lang__link.lang__link--triangle(href="#")
-              span.lang__name EN
-            ul.lang__sub-list
-              li.lang__sub-item
-                a.lang__sub-link(href="#")
-                span.lang__sub-name RU
-              li.lang__sub-item
-                a.lang__sub-link(href="#")
-                span.lang__sub-name UK
-              li.lang__sub-item
-                a.lang__sub-link(href="#")
-                span.lang__sub-name US
+
+    .present__wrap
+      .present__content-wrap
+          p.present__sub-title Подзаголовок
+          h2.present__title Заголовок ABCD несколько слов
+          p.present__descr Какой-то текст с описанием. Но явные признаки победы институционализации, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+          a.btn.present__btn(href="#" target="_blank" aria-label="Кнопка перехода") Кнопка
+
+          .social
+            ul.social__list
+              li
+                a(href="#" target="_blank")
+                  span.visually-hidden Мы в Twitter
+                  +svg('tw', 21, 18)
+              li
+                a(href="#" target="_blank")
+                  span.visually-hidden Мы в Facebook
+                  +svg('fb', 11, 24)
+              li
+                a(href="#" target="_blank")
+                  span.visually-hidden Мы во Vkontakte
+                  +svg('vk', 24, 14)
+
+      .present__img-wrap
+        img(src="img/present-bg.svg" alt="Present Image" width="859" height="811")

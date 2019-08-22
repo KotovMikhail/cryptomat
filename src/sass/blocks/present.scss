@@ -1,5 +1,4 @@
 .present {
-  padding-bottom: size(50px);
 
   &__sub-title {
     margin: 0;
@@ -34,23 +33,39 @@
   }
 
   &__wrap {
-    display:flex;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    padding-top: size(146px);
+    padding-left: size(65px);
+    padding-bottom: size(72px);
+
+    @include mobile {
+      padding-top: 40px;
+      padding-left: 0;
+    }
   }
 
   &__content-wrap {
+    position: relative;
+    z-index: 1;
     width: 100%;
     max-width: size(958px);
   }
 
-
   &__img-wrap {
-    position: relative;
+    position: absolute;
+    top: size(-158px);
+    right: size-desktop(-40px);
+    width: size(859px);
+    height: size(811px);
     & img {
-      position: relative;
-      top: 0;
-      right: 0;
-      z-index: -1;
+      width: size(859px);
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
     }
   }
-
 }
+

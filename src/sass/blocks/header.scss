@@ -1,25 +1,114 @@
 .header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding-top: 35px;
-  padding-bottom: 58px;
   box-sizing: border-box;
   width: 100%;
   background-color: $dark-blue;
-  z-index: 15;
+
+  &__wrap {
+    width: 100%;
+    background-color: $dark-blue;
+    padding-top: 35px;
+    padding-bottom: 58px;
+
+    @include tablet-small {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 50px;
+    padding-right: size-desktop(62px);
+    padding-bottom: 58px;
+    padding-left: size-desktop(40px);
+    box-sizing: border-box;
+
+    @include tablet-small {
+      display: none;
+      align-items: flex-start;
+      padding-top: 80px;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+
+    &--open {
+      display: block;
+      right: 0;
+      left: auto;
+      z-index: 10;
+      max-width: 375px;
+      height: 100vh;
+      background: $press-gradient;
+
+      .header__close {
+        display: block;
+      }
+    }
+  }
 
   &__logo {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
     margin-right: size(160px);
   }
 
   &__nav {
     margin-right: size(25px);
+    margin-left: size-desktop(429px);
+
+    @include tablet-small {
+      margin: 0;
+    }
+  }
+
+  &__lang {
+    @include tablet-small {
+      position: absolute;
+      top: 45px;
+      left: 30px;
+    }
   }
 }
 
-.header__wrap {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.header {
+  &__burger {
+    position: relative;
+    z-index: 5;
+    display: none;
+    @include button-reset;
+    svg {
+      width: 32px;
+      height: 30px;
+      fill: $white;
+    }
+
+    @include tablet-small {
+      display: block;
+    }
+  }
+
+  &__close {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    z-index: 5;
+    @include button-reset;
+    svg {
+      width: 32px;
+      height: 30px;
+      fill: $white;
+    }
+  }
 }
