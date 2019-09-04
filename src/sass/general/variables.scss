@@ -24,6 +24,7 @@ $font-main: 18px;
 $transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 
 $black: #000000;
+$dark-black: #071836;
 $white: #ffffff;
 $white-light: rgba(255, 255, 255, 0.8);
 $white-light-middle: rgba(255, 255, 255, 0.5);
@@ -32,10 +33,11 @@ $transparent: transparent;
 $transition: cubic-bezier(0.77, 0, 0.175, 1);
 
 $blue: #0758b7;
+$blue-open-menu: rgba(1, 25, 79, 0.95);
 $vivid-blue: #039cfd;
 $light-blue: #66ccff;
 $dark-blue: #01194f;
-$very-dark-blue: #0e171c;
+$very-dark-blue: rgba(14, 23, 28, 0.5);
 
 $gold: #ffea43;
 $orange: #ff9900;

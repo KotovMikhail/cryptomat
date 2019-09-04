@@ -17,4 +17,9 @@
   &--border-only {
     color: $white;
   }
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }

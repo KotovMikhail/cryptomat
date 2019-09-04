@@ -2,8 +2,17 @@
   padding-top: size(80px);
   padding-bottom: size(74px);
 
+  @include mobile {
+    padding-top: 67px;
+    padding-bottom: 40px;
+  }
+
   &__title {
     margin-bottom: size(35px);
+
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__content-wrap {
@@ -11,6 +20,11 @@
     display: flex;
     width: 100%;
     max-width: 100%;
+
+    @include tablet-small {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
   &__img-wrap {
@@ -23,6 +37,33 @@
       width: size(435px);
       max-width: 100%;
       height: auto;
+
+      @include mobile {
+        margin-bottom: 5px;
+        position: relative;
+        margin-top: -21px;
+        width:  258px;
+        height: 217px;
+      }
+    }
+
+    @include tablet-small {
+      margin-right: 0;
+      width: auto;
+      max-width: 100%;
+    }
+
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__advance {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

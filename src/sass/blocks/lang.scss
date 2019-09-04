@@ -5,6 +5,7 @@
   }
 
   &__link {
+    display: block;
     @include link-reset;
     @include font-xs;
     transition: color 0.3s ease-in-out;
@@ -12,7 +13,18 @@
 
     &--triangle {
       &::before {
-        @include triangle;
+        content: '';
+        position: absolute;
+        right: size(-13px);
+        top: size(8px);
+        width: size(6px);
+        height: size(6px);
+        border-left: size(2px) solid $white;
+        border-bottom: size(2px) solid $white;
+        border-top: none;
+        border-right: none;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in-out;
       }
 
       &::after {
@@ -28,21 +40,19 @@
         background-color: transparent;
         transition: all 0.3s ease-in-out;
       }
-    }
 
-    &:hover {
-      color: $gold;
-      transition: color 0.3s ease-in-out;
-    }
+      @include mobile {
+        font-size: 16px;
+        line-height: 12px;
 
-    &:hover::before {
-      border-left-color: $gold;
-      border-bottom-color: $gold;
-      transition: all 0.3s ease-in-out;
-    }
+        &::after {
+          content: none;
+        }
 
-    &:hover::after {
-      border-color: $gold;
+        &::before {
+          top: 0;
+        }
+      }
     }
   }
 
@@ -51,18 +61,51 @@
   &__sub-list {
     display: none;
     position: absolute;
-    top: size(30px);
-    right: 0;
     @include list-reset;
+    top: size(42px);
+    right: -25px;
+
+    border-radius: 3px;
+    background-color: $dark-black;
+
+    @include tablet-small {
+      top: -125px;
+      right: -21px;
+    }
+
+    @include mobile {
+      top: -94px;
+    }
+
+    &--open {
+      display: block;
+    }
   }
 
-  &__link:active ~ .lang__sub-list {
-    display: block;
+  &__sub-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__sub-link {
     @include link-reset;
     @include font-xs;
     color: $white-light;
+    display: block;
+    padding-top: size(15px);
+    padding-right: size(20px);
+    padding-left: size(5px);
+    padding-bottom: size(15px);
+
+    &:hover {
+      color: $gold;
+      cursor: pointer;
+    }
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 12px;
+    }
   }
 }

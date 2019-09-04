@@ -15,15 +15,35 @@
     height: 77%;
     background: $blue-gradient;
     opacity: 0.3;
+
+    @include mobile {
+      content: none;
+    }
+  }
+
+  @include mobile {
+    padding-top: 60px;
   }
 
   &__title {
     margin: 0;
     margin-bottom: size(55px);
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__content-list {
     margin-bottom: size(40px);
+
+    @include mobile-small {
+      margin-bottom: 104px;
+
+      .content__title-wrap {
+        bottom: -65px;
+      }
+    }
   }
 
   &__btn-wrap {
@@ -49,6 +69,11 @@
       padding-bottom: size(13px);
       padding-left: size(51px);
       border-radius: size(10px);
+
+      @include mobile {
+        padding-right: 70px;
+        padding-left: 70px;
+      }
     }
   }
 }

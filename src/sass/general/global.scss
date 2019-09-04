@@ -60,7 +60,7 @@ body {
   box-sizing: border-box;
 
   @include mobile {
-    padding: 0 24px;
+    padding: 0 10px;
   }
 }
 
@@ -71,6 +71,11 @@ body {
   color: $white;
   text-transform: uppercase;
   @include font-xl-bold-istok;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .positioner {
@@ -79,4 +84,12 @@ body {
   @include mobile {
     padding-left: 0;
   }
+}
+
+.menu-opened {
+  overflow: hidden;
+}
+
+#st-2 {
+  z-index: 9 !important;
 }

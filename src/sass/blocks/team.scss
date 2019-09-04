@@ -15,6 +15,10 @@
     padding-left: size(108px);
     margin-bottom: size(54px);
     box-sizing: border-box;
+
+    @include mobile {
+      padding-left: 10px;
+    }
   }
 
 
@@ -29,12 +33,23 @@
     margin-bottom: size(40px);
     width: size(220px);
     height: size(220px);
+
+    @include mobile {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
   }
 
   &__name {
     margin: 0;
     margin-bottom: size(12px);
     @include font-medium;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 
   &__position {
@@ -42,6 +57,11 @@
     margin-bottom: size(30px);
     color: $orange;
     @include font-xs;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 
   &__list {
@@ -53,3 +73,11 @@
     @include list-reset;
   }
 }
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+

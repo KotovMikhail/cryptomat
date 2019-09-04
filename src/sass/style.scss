@@ -1,12 +1,15 @@
-/* Vendor */
-@import "vendor/normalize";
-
 /* General */
 @import "general/variables";
 @import "general/functions";
 @import "general/mixins";
 @import "general/fonts";
 @import "general/global";
+
+/* Vendor */
+@import "vendor/normalize";
+@import "vendor/swiper";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 
 /* Blocks */
 // Общие блоки
@@ -46,6 +49,3 @@
 @import "blocks/blog";
 // footer
 @import "blocks/footer";
-
-@import "vendor/slick";
-@import "vendor/slick-theme";

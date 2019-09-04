@@ -5,6 +5,13 @@
     letter-spacing: size(-0.6px);
     @include font-large;
     color: $white;
+
+    @include mobile {
+      font-size: 16px;
+      margin-bottom: 18px;
+      line-height: 16px;
+      letter-spacing: -0.3px;
+    }
   }
 
   &__title {
@@ -17,8 +24,9 @@
     color: $white;
 
     @include mobile {
-      font-size: 30px;
-      line-height: 1.5;
+      margin-bottom: 174px;
+      font-size: 24px;
+      line-height: 28px;
     }
   }
 
@@ -30,23 +38,40 @@
     letter-spacing: size(-0.4px);
     @include font-xs;
     color: $white-light;
+
+    @include mobile {
+      margin-bottom: 36px;
+      letter-spacing: -0.3px;
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 
   &__btn {
     margin-bottom: size(55px);
+
+    @include mobile {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 0;
+    }
   }
 
   &__wrap {
     z-index: 0;
-    position: relative;
     display: flex;
-    padding-top: size(146px);
+    padding-top: size(10px);
     padding-left: size(65px);
     padding-bottom: size(72px);
 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 size-desktop(40px);
+    box-sizing: border-box;
+
     @include mobile {
-      padding-top: 40px;
-      padding-left: 0;
+      padding: 0 10px;
     }
   }
 
@@ -57,15 +82,18 @@
     max-width: size(958px);
 
     @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       position: static;
     }
   }
 
   &__img-wrap {
     position: absolute;
-    top: size(-158px);
-    right: size-desktop(-40px);
-    width: size(859px);
+    top: 0;
+    right: 0;
+    width: size(803px);
     height: size(811px);
 
     & img {
@@ -76,12 +104,17 @@
     }
 
     @include mobile {
-      width: size(767px);
-      right: (-24 / 320 * 100vw);
-      & img {
-        object-fit: cover;
-        height: 100%;
-      }
+      top: 161px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 320px;
+      height: 240px;
+    }
+  }
+
+  &-social {
+    @include mobile {
+      display: none;
     }
   }
 }
