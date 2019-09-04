@@ -6,6 +6,7 @@ var newer = require('gulp-newer');
 var plumber = require('gulp-plumber');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
+var replace = require('gulp-replace');
 
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
@@ -97,6 +98,7 @@ gulp.task('style', function () {
     .pipe(sass({
       outputStyle: 'expanded'
     }))
+    .pipe(replace('url("../../', 'url("../'))
     .pipe(postcss([
       autoprefixer()
     ]))

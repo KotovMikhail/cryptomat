@@ -1266,7 +1266,7 @@ button.swiper-pagination-bullet {
 }
 
 .slick-loading .slick-list {
-  background: #fff slick-image-url("../../img/ajax-loader.gif") center center no-repeat;
+  background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
@@ -1746,7 +1746,7 @@ button.swiper-pagination-bullet {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url("../../img/circle-grey.svg");
+  background-image: url("../img/circle-grey.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -3011,7 +3011,7 @@ button.swiper-pagination-bullet {
   background-color: transparent;
   width: 1.55556rem;
   height: 72.125vh;
-  background-image: url("../../img/about__bg-left.svg");
+  background-image: url("../img/about__bg-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 1.55556rem;
@@ -3495,7 +3495,7 @@ button.swiper-pagination-bullet {
   height: 0.61111rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-image: url("../../img/check-mark.svg");
+  background-image: url("../img/check-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
@@ -3546,7 +3546,7 @@ button.swiper-pagination-bullet {
   background-color: transparent;
   width: 1.55556rem;
   height: 72.125vh;
-  background-image: url("../../img/about__bg-left.svg");
+  background-image: url("../img/about__bg-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 1.55556rem;
