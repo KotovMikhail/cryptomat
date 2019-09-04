@@ -102,6 +102,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
+  z-index: 3;
   left: size(35px);
   [dir='rtl'] & {
     left: auto;
@@ -138,19 +139,28 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-dots {
   position: static;
   list-style: none;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0;
   margin: 0;
   width: 100%;
+
   li {
     position: relative;
     display: inline-block;
-    height: size(20px);
-    width: size(20px);
-    margin: 0 size(5px);
+    margin-right: size(40px);
     padding: 0;
     cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      margin-right: 5px;
+    }
 
     button {
       border: 0;
@@ -159,7 +169,7 @@ $slick-opacity-not-active: 0.25 !default;
       line-height: 0px;
       font-size: 0px;
       padding: 0;
-      display: inline-block;
+      display: block;
       width: 0.66667rem;
       height: 0.66667rem;
       border-radius: 50%;
@@ -176,7 +186,7 @@ $slick-opacity-not-active: 0.25 !default;
         position: absolute;
         top: 0;
         left: 0;
-        content: $slick-dot-character;
+        content: none;
         width: size(20px);
         height: size(20px);
         font-family: $slick-font-family;

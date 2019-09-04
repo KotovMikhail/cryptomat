@@ -2,9 +2,18 @@
   padding-top: size(118px);
   padding-bottom: size(100px);
 
+  @include mobile {
+    padding-top: 59px;
+    padding-bottom: 30px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: size(35px);
+
+    @include mobile {
+      margin-bottom: 17px;
+    }
   }
 
   &__descr {
@@ -15,6 +24,13 @@
     letter-spacing: size(-0.3px);
     @include font-xs;
     color: $white-light;
+
+    @include mobile {
+      margin-bottom: 14px;
+      letter-spacing: -0.2px;
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 
   &__list {
@@ -22,10 +38,19 @@
     width: 100%;
     max-width: size(1110px);
     margin-bottom: size(75px);
-    margin-left: size(28px);
+    margin-left: size-desktop(28px);
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+
+    @include tablet {
+      margin-left: 0;
+    }
+
+    @include tablet-small {
+      margin-bottom: 28px;
+      margin-left: 0;
+    }
   }
 
   &__item {
@@ -33,13 +58,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex-grow: 1;
-    width: 100%;
-    max-width: calc(190 / 1280 * 100vw);
-  }
+    box-sizing: border-box;
+    width: 20%;
 
-  &__block {
-    margin-bottom: size(30px);
+    @include tablet-small {
+      width: auto;
+    }
   }
 
   &__link {
@@ -50,11 +74,27 @@
     width: size(120px);
     height: size(120px);
     border-radius: size(10px);
+    margin-bottom: size(35px);
+
+    @include tablet-small {
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      margin-bottom: 12px;
+      width: 60px;
+      height: 60px;
+    }
 
     img {
       width: size(114px);
       height: size(114px);
       border-radius: size(10px);
+
+      @include mobile {
+        width: 58px;
+        height: auto;
+      }
     }
 
     &--first {
@@ -73,7 +113,7 @@
       background: $fourth-link;
     }
 
-    &--fifth{
+    &--fifth {
       background: $fifth-link;
     }
   }
@@ -82,11 +122,21 @@
     margin: 0;
     text-align: center;
     @include font-medium;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 
   &__orange-line {
     width: 100%;
     height: size(1px);
     background: $orange-gradient;
+
+    @include tablet-small {
+      width: 60%;
+      height: 1px;
+    }
   }
 }

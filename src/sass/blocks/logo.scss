@@ -6,8 +6,9 @@
     @include link-reset;
 
     @include mobile {
-      width: auto;
-      max-width: 205px;
+      width: 100%;
+      max-width: 145px;
+      height: 28px;
     }
   }
 

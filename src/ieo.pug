@@ -7,7 +7,9 @@ section.ieo#ieo
 
       .ieo__content-wrap
         .ieo__img-wrap
-          img(src="img/ieo-bg.svg" alt="Image Ieo Token" width="435" height="538")
+          picture
+            source(media="(max-width: 767px)" srcset="img/ieo-bg-mobile.svg")
+            img(src="img/ieo-bg.svg" alt="Image Ieo Token" width="435" height="538")
 
         .advance.ieo__advance
           ul.advance__list
@@ -35,6 +37,5 @@ section.ieo#ieo
 
           .title-box.advance__title-box
             span Сryptomat
-
 
           a.btn.btn--orange.advance__btn(href="#" target="_blank") Кнопка

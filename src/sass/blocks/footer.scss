@@ -3,15 +3,33 @@
   padding-bottom: size(55px);
   background-color: $very-dark-blue;
 
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__logo {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-right: size(130px);
+
+    @include tablet-small {
+      margin-right: (100 / 1280 * 100vw);
+    }
+
+    @include mobile {
+      order: 2;
+      margin-right: 0;
+    }
   }
 
   &__logo-link {
     margin-bottom: size(40px);
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__confident {
@@ -28,22 +46,46 @@
 
   &__wrap {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
   }
 
   &__list {
     @include list-reset;
-    margin-right: size(5px);
-    padding-top: size(15px);
+    padding-top: size(8px);
+    margin-right: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
     width: 100%;
-    max-width: size(600px);
+    max-width: size(500px);
+    min-height: size(80px);
+
+    @include mobile {
+      min-height: auto;
+      margin-right: 0;
+      margin-bottom: 40px;
+      padding-top: 0;
+
+    }
   }
 
   &__item {
-    width: 33.3%;
+    width: 100%;
+    max-width: size(100px);
+    box-sizing: border-box;
+
+    @include mobile {
+      width: 50%;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
   }
 
   &__link {
@@ -58,24 +100,16 @@
     }
   }
 
-  &__download {
-    @include link-reset;
-    @include font-xs;
-    color: $white-light;
-    margin-bottom: size(32px);
-    margin-left: size(8px);
-
-    &:hover {
-      color: $white;
-      text-decoration: underline;
-    }
-  }
-
   &__social {
-    padding-top: size(18px);
+    padding-top: size(8px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include mobile {
+      padding-top: 0;
+      margin-bottom: 25px;
+    }
   }
 }
