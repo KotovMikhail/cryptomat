@@ -67,3 +67,32 @@
     }
   }
 }
+
+
+.ieo__img-wrap {
+  position: relative;
+
+  .ieo__img-coin {
+    position: absolute;
+
+    &--first {
+      bottom: size(156px);
+      left: size(65px);
+
+      width: size(87px);
+      height: size(63px);
+    }
+
+    &--second {
+      top: size(77px);
+      left: size(116px);
+      width: size(142px);
+      height: size(102px);
+    }
+
+
+    @include mobile {
+      display: none;
+    }
+  }
+}

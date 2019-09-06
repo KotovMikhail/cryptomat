@@ -115,9 +115,19 @@
     width: 35px;
     height: 23px;
 
-    &::before,
-    &::after,
     span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 2px;
+      background-color: $white;
+      transform: skewX(-30deg);
+      transition: 0.3s all ease;
+    }
+
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       top: 0;

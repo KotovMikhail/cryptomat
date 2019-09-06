@@ -2,6 +2,7 @@
   position: relative;
   padding-top: size(80px);
   padding-bottom: 30px;
+  overflow: hidden;
 
   &::before {
     content: '';
@@ -215,12 +216,13 @@
   margin-top: size-vh(16px, $height-desktop);
 }
 
-
 .faq__img-wrap {
   width: 100%;
   height: 100%;
+}
 
-  img {
+.faq__img {
+  &--main {
     display: block;
     width: size-desktop(434px);
     max-width: 100%;
@@ -234,6 +236,31 @@
 
     @include mobile {
       height: auto;
+    }
+  }
+
+  &--plane-big {
+    position: absolute;
+    top: size(260px);
+    right: size(370px);
+    width: size(111px);
+    height: size(74px);
+    z-index: 5;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &--plane-small {
+    position: absolute;
+    top: size(300px);
+    right: size(180px);
+    width: size(75px);
+    height: size(50px);
+
+    @include mobile {
+      display: none;
     }
   }
 }

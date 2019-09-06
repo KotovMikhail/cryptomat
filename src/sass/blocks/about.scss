@@ -4,6 +4,9 @@
   padding-bottom: size(70px);
   background: $about-gradient;
 
+  & .positioner {
+    overflow: hidden;
+  }
 
   @include mobile {
     padding-top: 43px;
@@ -14,7 +17,7 @@
     content: '';
     position: absolute;
     left: size(42px);
-    top: 0  ;
+    top: 0;
     background-color: transparent;
     width: size(28px);
     height: size-vh(577px, $container-height);
@@ -39,12 +42,21 @@
   }
 
   &__descr {
+    position: relative;
+    right: -100%;
     margin: 0;
     width: 100%;
     max-width: size(1144px);
     letter-spacing: size(-0.7px);
     @include font-large;
     color: $white-light;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+    &--show {
+      opacity: 1;
+      right: 0;
+    }
 
     @include mobile {
       letter-spacing: -0.3px;

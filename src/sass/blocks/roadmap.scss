@@ -64,13 +64,19 @@
   }
 
   &__descr {
+    position: relative;
     margin: 0;
     width: 100%;
-    // max-width: size(550px);
     padding-right: size-desktop(25px);
     letter-spacing: size(-0.7px);
     @include font-large;
     box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    &--show {
+      opacity: 1;
+    }
 
     @include tablet-small {
       padding-right: 0;
@@ -95,6 +101,7 @@
   }
 
   &__left {
+    overflow: hidden;
     width: 54%;
 
     @include tablet-small {

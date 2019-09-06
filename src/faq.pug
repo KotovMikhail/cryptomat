@@ -33,4 +33,8 @@ section.faq#faq
 
         .faq__col
           .faq__img-wrap
-            img(src="img/faq-bg.svg" alt="FAQ" width="434" height="500")
+            img.faq__img.faq__img--plane-big(src="img/plane-big.svg" alt="FAQ" width="111" height="74")
+            img.faq__img.faq__img--plane-small(src="img/plane-small.svg" alt="FAQ" width="75" height="50")
+            picture
+              source(media="(max-width: 767px)" srcset="img/faq-mobile.svg")
+              img.faq__img.faq__img--main(src="img/faq-bg-2.svg" alt="Present Image" width="434" height="500")

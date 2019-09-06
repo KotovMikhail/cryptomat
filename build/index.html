@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/IstokWeb-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/IstokWeb-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
-  <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5d416e3c919c2c0012611f43&product=inline-share-buttons' async='async'></script>
+  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5d416e3c919c2c0012611f43&amp;product=inline-share-buttons" async="async"></script>
 </head>
 
 <body class="body">
@@ -105,7 +105,7 @@
           </ul>
         </div>
       </div>
-      <div class="present__img-wrap" id="img">
+      <div class="present__img-wrap"><img class="present__coin present__coin--first" src="img/first-coin.svg" alt="Coin" width="175" height="273"><img class="present__coin present__coin--second" src="img/second-coin.svg" alt="Coin" width="124" height="260"><img class="present__coin present__coin--third" src="img/third-coin.svg" alt="Coin" width="107" height="189">
         <picture>
           <source media="(max-width: 767px)" srcset="img/present-bg-mobile.svg"><img src="img/present-bg.svg" alt="Present Image" width="859" height="811"></picture>
       </div>
@@ -117,7 +117,7 @@
         <div class="positioner">
           <h2 class="title ieo__title">Ieo</h2>
           <div class="ieo__content-wrap">
-            <div class="ieo__img-wrap">
+            <div class="ieo__img-wrap"><img class="ieo__img-coin ieo__img-coin--first" src="img/ieo-coin-1.svg" alt="Image Ieo Token" width="87" height="63"><img class="ieo__img-coin ieo__img-coin--second" src="img/ieo-coin-2.svg" alt="Image Ieo Token" width="142" height="102">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/ieo-bg-mobile.svg"><img src="img/ieo-bg.svg" alt="Image Ieo Token" width="435" height="538"></picture>
             </div>
@@ -164,7 +164,9 @@
       <div class="container">
         <div class="positioner">
           <h2 class="title paper__title">Papers</h2>
-          <p class="paper__descr">Download the other DEEX documents describe crucial benefits of DEEX being all-in-one decentralized cryptocurrency ecosystem bringing the new level of ease and speed at which DEX cryptocurrency exchange works, as well as fully functional ecosystem of cryptocurrency ATMs, debit crypto cards, API, merchant, traded cryptocurrency Blockchain fund and ICO ecosystem</p>
+          <div class="paper__descr-wrap">
+            <p class="paper__descr">Download the other DEEX documents describe crucial benefits of DEEX being all-in-one decentralized cryptocurrency ecosystem bringing the new level of ease and speed at which DEX cryptocurrency exchange works, as well as fully functional ecosystem of cryptocurrency ATMs, debit crypto cards, API, merchant, traded cryptocurrency Blockchain fund and ICO ecosystem</p>
+          </div>
           <div class="swiper-container swiper-container-s4">
             <ul class="paper__list swiper-wrapper">
               <li class="paper__item swiper-slide"><a class="paper__link paper__link--first" href="https://www.deex.group/docs/DEEX_wp-2.0_eng.pdf" target="_blank" download><img src="img/terminal.svg" alt="" width="114" height="114"></a>
@@ -431,7 +433,10 @@
               </div>
             </div>
             <div class="faq__col">
-              <div class="faq__img-wrap"><img src="img/faq-bg.svg" alt="FAQ" width="434" height="500"></div>
+              <div class="faq__img-wrap"><img class="faq__img faq__img--plane-big" src="img/plane-big.svg" alt="FAQ" width="111" height="74"><img class="faq__img faq__img--plane-small" src="img/plane-small.svg" alt="FAQ" width="75" height="50">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/faq-mobile.svg"><img class="faq__img faq__img--main" src="img/faq-bg-2.svg" alt="Present Image" width="434" height="500"></picture>
+              </div>
             </div>
           </div>
         </div>
@@ -535,6 +540,13 @@
     </footer>
   </main>
   <script src="js/vendor.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha256-VV47uJSoHZUeiBcCs3FcBOQLMn++yeG/zqZvaUkvGZM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha256-nuhNsfXzBFR6G1lKP8bK77dakkQDqdHcQ4OCFZvk6Qo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" integrity="sha256-LBjlnpPrM6Aig8LDFc9PJctPHLGUc6RaUvnmXE4hV5Y=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js" integrity="sha256-5jxCMRC1PYU02qJn+fj+DPuxcQZCh0DR8GRwi4iKoRc=" crossorigin="anonymous"></script>
   <script src="js/script.min.js"></script>
 </body>
 
