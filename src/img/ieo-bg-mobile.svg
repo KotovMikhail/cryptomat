@@ -1,5 +1,5 @@
 <svg width="258" height="217" viewBox="0 0 258 217" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<style type="text/css">
+<!-- <style type="text/css">
 		.line1{animation: topLine 1.8s linear infinite;}
 		.line2{animation: topLine 3s linear infinite;}
 		.line3{animation: topLine 5s linear infinite;}
@@ -161,7 +161,7 @@
 		.st102{fill:url(#SVGID_72_);}
 		.st103{fill:url(#SVGID_73_);}
 		.st104{fill:url(#SVGID_74_);}
-	</style>
+	</style> -->
 
 <path opacity="0.1" d="M29.4529 117.427C23.2192 113.509 23.214 104.426 29.4432 100.5L118.737 44.2333C121.991 42.1826 126.133 42.1803 129.389 44.2272L218.547 100.267C224.781 104.185 224.786 113.269 218.557 117.194L129.263 173.461C126.009 175.512 121.867 175.514 118.611 173.467L29.4529 117.427Z" fill="url(#paint0_linear)"/>
 <rect x="103.083" y="40.8015" width="4.46867" height="71.3243" fill="#01194F"/>

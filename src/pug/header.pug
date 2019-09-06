@@ -69,7 +69,10 @@ header.header
                   span.visually-hidden Мы во Vkontakte
                   +svg('vk', 24, 14)
 
-      .present__img-wrap#img
+      .present__img-wrap
+        img.present__coin.present__coin--first(src="img/first-coin.svg" alt="Coin" width="175" height="273")
+        img.present__coin.present__coin--second(src="img/second-coin.svg" alt="Coin" width="124" height="260")
+        img.present__coin.present__coin--third(src="img/third-coin.svg" alt="Coin" width="107" height="189")
         picture
           source(media="(max-width: 767px)" srcset="img/present-bg-mobile.svg")
           img(src="img/present-bg.svg" alt="Present Image" width="859" height="811")

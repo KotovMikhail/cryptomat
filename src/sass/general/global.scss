@@ -71,6 +71,9 @@ body {
   color: $white;
   text-transform: uppercase;
   @include font-xl-bold-istok;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: scale(0.9);
 
   @include mobile {
     font-size: 18px;
@@ -92,4 +95,10 @@ body {
 
 #st-2 {
   z-index: 9 !important;
+}
+
+
+.show {
+  opacity: 1;
+  transform: none;
 }

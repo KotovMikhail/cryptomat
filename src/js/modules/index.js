@@ -6,8 +6,8 @@ $('.team__list').slick({
   dotsClass: 'slick-dots',
   centerMode: false,
   focusOnSelect: false,
-  draggable: false,
-  arrows: true,
+  draggable: true,
+  arrows: false,
   responsive: [{
       breakpoint: 1000,
       settings: {

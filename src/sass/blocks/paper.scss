@@ -16,14 +16,31 @@
     }
   }
 
-  &__descr {
-    margin: 0;
+  &__descr-wrap {
     margin-bottom: size(34px);
+    overflow: hidden;
+
+    @include mobile {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__descr {
+    position: relative;
+    left: -100%;
+    margin: 0;
     width: 100%;
     max-width: size(1132px);
     letter-spacing: size(-0.3px);
     @include font-xs;
     color: $white-light;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+    &--show {
+      opacity: 1;
+      left: 0;
+    }
 
     @include mobile {
       margin-bottom: 14px;
